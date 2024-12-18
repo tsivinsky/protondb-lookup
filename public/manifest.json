@@ -1,0 +1,14 @@
+{
+  "name": "ProtonDB Lookup",
+  "short_name": "ProtonDB Lookup",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "share_target": {
+    "action": "/",
+    "method": "GET",
+    "params": {
+      "url": "link"
+    }
+  }
+}

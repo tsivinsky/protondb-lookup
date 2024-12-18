@@ -1,5 +1,13 @@
 import "./style.css";
 
+window.addEventListener("beforeinstallprompt", (e) => {
+  const btn = document.querySelector(".install-btn");
+  if (!btn) return;
+
+  btn.style.display = "block";
+  btn.addEventListener("click", () => e.prompt());
+});
+
 function main() {
   const searchParams = new URLSearchParams(location.search);
   const link = searchParams.get("link");

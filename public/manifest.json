@@ -1,7 +1,7 @@
 {
   "name": "ProtonDB Lookup",
   "short_name": "ProtonDB Lookup",
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
   "theme_color": "#ffffff",
   "share_target": {
@@ -10,5 +10,17 @@
     "params": {
       "url": "link"
     }
-  }
+  },
+  "icons": [
+    {
+      "src": "/protondb_logo.svg",
+      "type": "image/svg",
+      "sizes": "512x512"
+    },
+    {
+      "src": "/protondb_logo.svg",
+      "type": "image/svg",
+      "sizes": "192x192"
+    }
+  ]
 }

@@ -11,13 +11,14 @@ window.addEventListener("beforeinstallprompt", (e) => {
 function main() {
   const searchParams = new URLSearchParams(location.search);
   const link = searchParams.get("link");
+  if (!link) return;
 
   const div = document.createElement("div");
   div.innerHTML = searchParams.toString();
   document.body.appendChild(div);
 
   try {
-    const u = new URL(link);
+    const u = new URL(decodeURIComponent(link));
     if (u.hostname !== "store.steampowered.com") {
       return;
     }

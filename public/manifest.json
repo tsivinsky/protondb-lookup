@@ -8,8 +8,8 @@
     "action": "/",
     "method": "GET",
     "params": {
-      "title": "Lookup",
-      "text": "Lookup game on ProtonDB",
+      "title": "Lookup game on ProtonDB",
+      "text": "link",
       "url": "link"
     }
   },

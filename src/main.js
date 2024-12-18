@@ -12,6 +12,10 @@ function main() {
   const searchParams = new URLSearchParams(location.search);
   const link = searchParams.get("link");
 
+  const div = document.createElement("div");
+  div.innerHTML = searchParams.toString();
+  document.body.appendChild(div);
+
   try {
     const u = new URL(link);
     if (u.hostname !== "store.steampowered.com") {
